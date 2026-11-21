@@ -1,0 +1,131 @@
+.hero-section {
+  padding: 140px 32px 80px;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hero-badge {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-bg);
+  padding: 6px 16px;
+  border-radius: 50px;
+  margin-bottom: 24px;
+  letter-spacing: 0.3px;
+}
+
+.hero-title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -2px;
+  margin: 0 0 24px;
+  color: var(--text-h);
+}
+
+.highlight {
+  background: linear-gradient(135deg, var(--accent), #6366f1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle {
+  font-size: 19px;
+  line-height: 1.7;
+  color: var(--text);
+  max-width: 650px;
+  margin: 0 auto 40px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  margin-bottom: 64px;
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 14px 28px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(170, 59, 255, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(170, 59, 255, 0.4);
+}
+
+.btn-secondary {
+  background: var(--social-bg);
+  color: var(--text-h);
+  border: 1px solid var(--border);
+}
+
+.btn-secondary:hover {
+  background: var(--border);
+}
+
+.hero-stats {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.stat-number {
+  display: block;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text-h);
+  letter-spacing: -1px;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: var(--text);
+}
+
+.stat-divider {
+  width: 1px;
+  height: 48px;
+  background: var(--border);
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 120px 20px 60px;
+  }
+  .hero-title {
+    font-size: 36px;
+    letter-spacing: -1px;
+  }
+  .hero-subtitle {
+    font-size: 16px;
+  }
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-stats {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .stat-divider {
+    width: 48px;
+    height: 1px;
+  }
+}
