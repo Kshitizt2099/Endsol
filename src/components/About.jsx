@@ -1,69 +1,88 @@
-import './About.css'
+import React from 'react';
+import { 
+  ShieldCheck, 
+  RotateCcw, 
+  Clock, 
+  IndianRupee, 
+  CheckCircle2 
+} from 'lucide-react';
+import './About.css';
 
 function About() {
+  const highlights = [
+    {
+      icon: ShieldCheck,
+      title: 'Police & ID Verified',
+      titleHi: 'सत्यापित पहचान',
+      desc: 'Mandatory Aadhaar card and local police background verification for every service professional.'
+    },
+    {
+      icon: RotateCcw,
+      title: 'Free Replacement Guarantee',
+      titleHi: 'आसान रिप्लेसमेंट',
+      desc: 'Not satisfied with your house help or technician? We provide an immediate free replacement within 24 hours.'
+    },
+    {
+      icon: Clock,
+      title: 'Guaranteed On-Time Service',
+      titleHi: 'समय पर सेवा',
+      desc: 'Punctual arrival with live tracking and slot management across Delhi, Noida, Gurgaon & Faridabad.'
+    },
+    {
+      icon: IndianRupee,
+      title: 'Transparent Pricing',
+      titleHi: 'पारदर्शी दरें',
+      desc: 'Fixed rate cards with zero hidden charges. Pay online or cash only after the work is completed.'
+    }
+  ];
+
   return (
-    <section className="about-section" id="about">
-      <div className="about-container">
-        <div className="about-content">
-          <span className="section-badge">About Us</span>
-          <h2 className="section-title">Technology partners you can trust</h2>
-          <p className="about-text">
-            At Endsol, we believe technology should be a growth engine — not a bottleneck. 
-            Our team of engineers, designers, and strategists work together to deliver 
-            solutions that are not just technically excellent, but strategically aligned 
-            with your business goals.
+    <section className="about-section-brand" id="about">
+      <div className="about-container-inner">
+        <div className="about-header-wrap">
+          <span className="section-badge-orange">Why Choose eNeedSol</span>
+          <h2 className="about-main-title">
+            Your Trusted Home & Business Service Partner{' '}
+            <span className="title-hindi">(विश्वसनीय सेवा का भरोसा)</span>
+          </h2>
+          <p className="about-lead-para">
+            eNeedSol was created to eliminate the daily hassle of finding reliable maids, plumbers, 
+            electricians, and repair technicians. We bring safety, quality standards, and digital accountability to 
+            your doorstep across Delhi-NCR.
           </p>
-          <p className="about-text">
-            With years of experience across industries — from startups to enterprises — 
-            we bring the expertise and dedication needed to turn your vision into reality.
-          </p>
-          <div className="about-values">
-            <div className="value">
-              <span className="value-icon">⚡</span>
-              <div>
-                <h4>Agile Delivery</h4>
-                <p>Iterative development with transparent communication at every step.</p>
-              </div>
-            </div>
-            <div className="value">
-              <span className="value-icon">🎯</span>
-              <div>
-                <h4>Results Focused</h4>
-                <p>Every decision is driven by measurable business outcomes.</p>
-              </div>
-            </div>
-            <div className="value">
-              <span className="value-icon">🤝</span>
-              <div>
-                <h4>True Partnership</h4>
-                <p>We succeed when you succeed. Long-term relationships, not transactions.</p>
-              </div>
-            </div>
-          </div>
         </div>
-        <div className="about-visual">
-          <div className="visual-card">
-            <div className="visual-row">
-              <span className="visual-number">8+</span>
-              <span className="visual-label">Years of Experience</span>
-            </div>
-            <div className="visual-row">
-              <span className="visual-number">15+</span>
-              <span className="visual-label">Industries Served</span>
-            </div>
-            <div className="visual-row">
-              <span className="visual-number">99.9%</span>
-              <span className="visual-label">Uptime Guarantee</span>
-            </div>
-            <div className="visual-row">
-              <span className="visual-number">24/7</span>
-              <span className="visual-label">Support Available</span>
-            </div>
+
+        <div className="about-grid-four">
+          {highlights.map((item, idx) => {
+            const Icon = item.icon;
+            return (
+              <div key={idx} className="about-feature-box">
+                <div className="about-icon-circle">
+                  <Icon size={24} color="#ff5722" />
+                </div>
+                <h3 className="feature-box-title">{item.title}</h3>
+                <span className="feature-box-hindi">{item.titleHi}</span>
+                <p className="feature-box-desc">{item.desc}</p>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Verified Security Strip */}
+        <div className="about-security-strip">
+          <div className="sec-strip-text">
+            <h4>Safety & Training Standard</h4>
+            <p>Every domestic helper and technician goes through a 3-day training module on hygiene, behavioral etiquette, and professional service tools.</p>
+          </div>
+          <div className="sec-strip-badges">
+            <span className="sec-badge">✓ 100% Police Verified</span>
+            <span className="sec-badge">✓ 30-Day Service Warranty</span>
+            <span className="sec-badge">✓ Standardized Equipment</span>
           </div>
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default About
+export default About;

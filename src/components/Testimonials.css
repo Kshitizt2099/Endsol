@@ -1,56 +1,104 @@
-.testimonials-section {
-  padding: 100px 32px;
+.testimonials-section-brand {
+  padding: 80px 24px;
+  background: #ffffff;
 }
 
-.testimonials-container {
-  max-width: 1200px;
+.testimonials-container-wrap {
+  max-width: 1280px;
   margin: 0 auto;
-  text-align: center;
 }
 
-.testimonials-grid {
+.testimonials-header-center {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 48px;
+}
+
+.testimonials-pill-tag {
+  display: inline-block;
+  background: #fef3c7;
+  color: #b45309;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 4px 14px;
+  border-radius: 50px;
+  margin-bottom: 12px;
+}
+
+.testimonials-heading-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: #0f2c59;
+  letter-spacing: -0.8px;
+  margin: 0 0 14px;
+}
+
+.hindi-rating-bracket {
+  color: #ff5722;
+  font-size: 28px;
+}
+
+.testimonials-desc-text {
+  font-size: 16px;
+  color: #64748b;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.testimonials-cards-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  text-align: left;
 }
 
-.testimonial-card {
-  background: var(--social-bg);
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  padding: 32px;
+.review-card {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  padding: 28px 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  transition: all 0.3s;
+  transition: all 0.2s ease;
 }
 
-.testimonial-card:hover {
+.review-card:hover {
   transform: translateY(-4px);
-  box-shadow: var(--shadow);
+  border-color: #cbd5e1;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.06);
 }
 
-.testimonial-quote {
-  font-size: 16px;
+.review-rating-stars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 16px;
+}
+
+.review-text-content {
+  font-size: 14px;
   line-height: 1.7;
-  color: var(--text);
-  font-style: italic;
+  color: #334155;
   margin: 0 0 24px;
+  font-style: italic;
+  flex: 1;
 }
 
-.testimonial-author {
+.review-author-bar {
   display: flex;
   align-items: center;
   gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid #e2e8f0;
 }
 
-.author-avatar {
+.author-avatar-initials {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background: linear-gradient(135deg, var(--accent), #6366f1);
-  color: #fff;
+  background: linear-gradient(135deg, #0f2c59 0%, #1e40af 100%);
+  color: #ffffff;
   font-size: 14px;
   font-weight: 700;
   display: flex;
@@ -59,29 +107,53 @@
   flex-shrink: 0;
 }
 
-.author-name {
-  display: block;
-  font-size: 15px;
+.author-meta-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.author-name-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.author-real-name {
+  font-size: 14px;
   font-weight: 700;
-  color: var(--text-h);
+  color: #0f172a;
 }
 
-.author-role {
-  display: block;
-  font-size: 13px;
-  color: var(--text);
+.verified-buyer-pill {
+  font-size: 9px;
+  background: #ecfdf5;
+  color: #059669;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 6px;
 }
 
-@media (max-width: 1024px) {
-  .testimonials-grid {
+.author-location-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: #64748b;
+  flex-wrap: wrap;
+}
+
+.bullet-sep {
+  color: #cbd5e1;
+}
+
+.author-service-tag {
+  color: #ff5722;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .testimonials-cards-grid {
     grid-template-columns: 1fr;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-}
-
-@media (max-width: 640px) {
-  .testimonials-section {
-    padding: 60px 20px;
   }
 }

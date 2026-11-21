@@ -1,1 +1,13 @@
-/* App-level overrides (empty — component styles handle everything) */
+/* eNeedSol Website Layout */
+.eneedsol-app-site {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  color: #1e293b;
+}
+
+html {
+  scroll-behavior: smooth;
+}
