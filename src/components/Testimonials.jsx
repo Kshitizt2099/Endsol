@@ -40,7 +40,7 @@ function Testimonials() {
             <span className="hindi-rating-bracket">(ग्राहकों का अनुभव)</span>
           </h2>
           <p className="testimonials-desc-text">
-            Over 2,800+ households across Delhi, Noida, Gurgaon & Faridabad rely on eNeedSol every single day.
+            Over 2,800+ households across Delhi , Noida, Gurgaon & Faridabad rely on eNeedSol every single day.
           </p>
         </div>
 
