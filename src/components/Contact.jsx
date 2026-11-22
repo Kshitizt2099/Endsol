@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { 
-  Phone, 
-  Mail, 
-  MapPin, 
-  CheckCircle2, 
-  Send, 
-  MessageSquare 
+import {
+  Phone,
+  Mail,
+  MapPin,
+  CheckCircle2,
+  Send,
+  MessageSquare
 } from 'lucide-react';
 import './Contact.css';
 
@@ -52,7 +52,7 @@ function Contact({ prefilledService }) {
             Book Your Service Today <span className="hindi-contact-bracket">(तुरंत सेवा बुक करें)</span>
           </h2>
           <p className="contact-desc-paragraph">
-            Need a verified maid, urgent plumber, or AC servicing? Fill out the form or reach out 
+            Need a verified maid, urgent plumber, or AC servicing? Fill out the form or reach out
             directly on WhatsApp. Our coordinator will confirm your verified pro within 15 minutes.
           </p>
 
@@ -63,7 +63,7 @@ function Contact({ prefilledService }) {
               </div>
               <div className="channel-info">
                 <span className="channel-label">Call Us Directly</span>
-                <a href="tel:+919876543210" className="channel-value">+91 98765 43210</a>
+                <a href="tel:+919312081077" className="channel-value">+91 9312081077</a>
                 <span className="channel-sub">Mon–Sun: 7:00 AM – 10:00 PM</span>
               </div>
             </div>
@@ -74,10 +74,10 @@ function Contact({ prefilledService }) {
               </div>
               <div className="channel-info">
                 <span className="channel-label">Instant WhatsApp Booking</span>
-                <a 
-                  href="https://wa.me/919876543210?text=Hi%20eNeedSol,%20I%20want%20to%20book%20a%20service." 
-                  target="_blank" 
-                  rel="noreferrer" 
+                <a
+                  href="https://wa.me/919312081077?text=Hi%20eNeedSol,%20I%20want%20to%20book%20a%20service."
+                  target="_blank"
+                  rel="noreferrer"
                   className="channel-value wa-color"
                 >
                   Chat with Coordinator
@@ -119,7 +119,7 @@ function Contact({ prefilledService }) {
                 <CheckCircle2 size={48} color="#10b981" />
                 <h4>Booking Request Received!</h4>
                 <p>Thank you, <b>{formData.name || 'Customer'}</b>. Our Delhi-NCR service coordinator will call you on <b>{formData.phone || 'your number'}</b> within 15 minutes to confirm your technician/helper.</p>
-                <button 
+                <button
                   className="btn-book-another"
                   onClick={() => setSubmitted(false)}
                 >
@@ -131,23 +131,23 @@ function Contact({ prefilledService }) {
                 <div className="form-two-fields">
                   <div className="field-group">
                     <label>Full Name (पूरा नाम) *</label>
-                    <input 
-                      type="text" 
-                      required 
-                      placeholder="e.g. Shakti Singh" 
+                    <input
+                      type="text"
+                      required
+                      placeholder="e.g. Shakti Singh"
                       value={formData.name}
-                      onChange={(e) => setFormData({...formData, name: e.target.value})}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                     />
                   </div>
 
                   <div className="field-group">
                     <label>Phone Number (मोबाइल नंबर) *</label>
-                    <input 
-                      type="tel" 
-                      required 
-                      placeholder="e.g. +91 98765 43210" 
+                    <input
+                      type="tel"
+                      required
+                      placeholder="e.g. +91 93120 81077"
                       value={formData.phone}
-                      onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     />
                   </div>
                 </div>
@@ -155,9 +155,9 @@ function Contact({ prefilledService }) {
                 <div className="form-two-fields">
                   <div className="field-group">
                     <label>City / Location (शहर) *</label>
-                    <select 
+                    <select
                       value={formData.city}
-                      onChange={(e) => setFormData({...formData, city: e.target.value})}
+                      onChange={(e) => setFormData({ ...formData, city: e.target.value })}
                     >
                       <option value="Delhi">Delhi (South, West, East, North)</option>
                       <option value="Noida">Noida & Greater Noida</option>
@@ -169,9 +169,9 @@ function Contact({ prefilledService }) {
 
                   <div className="field-group">
                     <label>Select Category (सेवा चुनें) *</label>
-                    <select 
+                    <select
                       value={formData.service}
-                      onChange={(e) => setFormData({...formData, service: e.target.value})}
+                      onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                     >
                       {servicesList.map((svc) => (
                         <option key={svc.value} value={svc.value}>
@@ -191,16 +191,16 @@ function Contact({ prefilledService }) {
                       { id: 'livein', label: 'Live-in (24x7)' },
                       { id: 'urgent', label: 'One-Time Instant' }
                     ].map((shift) => (
-                      <label 
-                        key={shift.id} 
+                      <label
+                        key={shift.id}
                         className={`shift-radio-lbl ${formData.shift === shift.id ? 'active-shift' : ''}`}
                       >
-                        <input 
-                          type="radio" 
-                          name="shift" 
+                        <input
+                          type="radio"
+                          name="shift"
                           value={shift.id}
                           checked={formData.shift === shift.id}
-                          onChange={(e) => setFormData({...formData, shift: e.target.value})}
+                          onChange={(e) => setFormData({ ...formData, shift: e.target.value })}
                         />
                         <span>{shift.label}</span>
                       </label>
@@ -210,21 +210,21 @@ function Contact({ prefilledService }) {
 
                 <div className="field-group">
                   <label>Address / Society / Landmark</label>
-                  <input 
-                    type="text" 
-                    placeholder="e.g. Flat 402, Tower B, Sector 62, Noida" 
+                  <input
+                    type="text"
+                    placeholder="e.g. Flat 402, Tower B, Sector 62, Noida"
                     value={formData.address}
-                    onChange={(e) => setFormData({...formData, address: e.target.value})}
+                    onChange={(e) => setFormData({ ...formData, address: e.target.value })}
                   />
                 </div>
 
                 <div className="field-group">
                   <label>Specific Instructions / Notes</label>
-                  <textarea 
-                    rows="3" 
+                  <textarea
+                    rows="3"
                     placeholder="Tell us about your requirements (e.g., North Indian cooking, 2 BHK deep clean, AC not cooling...)"
                     value={formData.message}
-                    onChange={(e) => setFormData({...formData, message: e.target.value})}
+                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   ></textarea>
                 </div>
 

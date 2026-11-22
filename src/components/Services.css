@@ -205,10 +205,21 @@
   .services-heading-title {
     font-size: 30px;
   }
+  .hindi-title-bracket {
+    display: block;
+    margin-top: 10px;
+    font-size: 26px;
+  }
 }
 
 @media (max-width: 540px) {
   .category-cards-grid {
     grid-template-columns: 1fr;
+  }
+  .services-heading-title {
+    font-size: 26px;
+  }
+  .hindi-title-bracket {
+    font-size: 22px;
   }
 }

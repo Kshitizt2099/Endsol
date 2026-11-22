@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { 
-  MapPin, 
-  Phone, 
-  Menu, 
-  X, 
-  ShieldCheck, 
+import {
+  MapPin,
+  Phone,
+  Menu,
+  X,
+  ShieldCheck,
   Calendar,
   MessageSquare,
   Globe
@@ -38,8 +38,8 @@ function Navbar() {
 
           <div className="strip-right">
             {/* Language Switcher Toggle */}
-            <button 
-              className="lang-toggle-btn" 
+            <button
+              className="lang-toggle-btn"
               onClick={toggleLanguage}
               title={language === 'en' ? 'Switch to Hindi (हिन्दी)' : 'Switch to English'}
             >
@@ -51,8 +51,8 @@ function Navbar() {
 
             <div className="location-dropdown-wrap">
               <MapPin size={13} color="#ff5722" />
-              <select 
-                value={selectedCity} 
+              <select
+                value={selectedCity}
                 onChange={(e) => setSelectedCity(e.target.value)}
                 className="city-selector"
               >
@@ -62,9 +62,9 @@ function Navbar() {
               </select>
             </div>
 
-            <a href="tel:+919876543210" className="top-phone-link">
+            <a href="tel:+919312081077" className="top-phone-link">
               <Phone size={12} />
-              <span>+91 98765 43210</span>
+              <span>+91 93120 81077</span>
             </a>
           </div>
         </div>
@@ -75,10 +75,10 @@ function Navbar() {
         <div className="navbar-container">
           {/* Official Brand Logo */}
           <a href="#" className="navbar-logo-link">
-            <img 
-              src={logoImg} 
-              alt="eNeedSol — Digital Solutions That Drive Results" 
-              className="navbar-brand-logo-img" 
+            <img
+              src={logoImg}
+              alt="eNeedSol — Digital Solutions That Drive Results"
+              className="navbar-brand-logo-img"
             />
           </a>
 
@@ -124,7 +124,7 @@ function Navbar() {
           {/* Right CTA */}
           <div className="nav-actions">
             {/* Quick Lang Pill in main bar */}
-            <button 
+            <button
               className="nav-lang-pill"
               onClick={toggleLanguage}
             >
@@ -132,10 +132,10 @@ function Navbar() {
               <span>{language === 'en' ? 'हिन्दी' : 'EN'}</span>
             </button>
 
-            <a 
-              href="https://wa.me/919876543210?text=Hello%20eNeedSol,%20I%20would%20like%20to%20book%20a%20service." 
-              target="_blank" 
-              rel="noreferrer" 
+            <a
+              href="https://wa.me/919312081077?text=Hello%20eNeedSol,%20I%20would%20like%20to%20book%20a%20service."
+              target="_blank"
+              rel="noreferrer"
               className="btn-whatsapp-nav"
             >
               <MessageSquare size={14} />
@@ -147,7 +147,7 @@ function Navbar() {
               <span>{t('Book a Service', 'सेवा बुक करें')}</span>
             </a>
 
-            <button 
+            <button
               className="mobile-hamburger-btn"
               onClick={() => setMenuOpen(!menuOpen)}
               aria-label="Toggle menu"

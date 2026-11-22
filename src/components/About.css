@@ -156,11 +156,20 @@
   }
 }
 
+@media (max-width: 768px) {
+  .about-main-title {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  .title-hindi {
+    display: block;
+    margin-top: 8px;
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 600px) {
   .about-grid-four {
     grid-template-columns: 1fr;
-  }
-  .about-main-title {
-    font-size: 28px;
   }
 }
