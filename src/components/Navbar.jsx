@@ -62,9 +62,9 @@ function Navbar() {
               </select>
             </div>
 
-            <a href="tel:+919312081077" className="top-phone-link">
+            <a href="tel:+919289328063" className="top-phone-link">
               <Phone size={12} />
-              <span>+91 93120 81077</span>
+              <span>+91 92893 28063</span>
             </a>
           </div>
         </div>
@@ -133,7 +133,7 @@ function Navbar() {
             </button>
 
             <a
-              href="https://wa.me/919312081077?text=Hello%20eNeedSol,%20I%20would%20like%20to%20book%20a%20service."
+              href="https://wa.me/919289328063?text=Hello%20eNeedSol,%20I%20would%20like%20to%20book%20a%20service."
               target="_blank"
               rel="noreferrer"
               className="btn-whatsapp-nav"
