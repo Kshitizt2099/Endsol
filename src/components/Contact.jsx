@@ -63,7 +63,7 @@ function Contact({ prefilledService }) {
               </div>
               <div className="channel-info">
                 <span className="channel-label">Call Us Directly</span>
-                <a href="tel:+919312081077" className="channel-value">+91 9312081077</a>
+                <a href="tel:+919289328063" className="channel-value">+91 9289328063</a>
                 <span className="channel-sub">Mon–Sun: 7:00 AM – 10:00 PM</span>
               </div>
             </div>
@@ -75,7 +75,7 @@ function Contact({ prefilledService }) {
               <div className="channel-info">
                 <span className="channel-label">Instant WhatsApp Booking</span>
                 <a
-                  href="https://wa.me/919312081077?text=Hi%20eNeedSol,%20I%20want%20to%20book%20a%20service."
+                  href="https://wa.me/919289328063?text=Hi%20eNeedSol,%20I%20want%20to%20book%20a%20service."
                   target="_blank"
                   rel="noreferrer"
                   className="channel-value wa-color"
@@ -145,7 +145,7 @@ function Contact({ prefilledService }) {
                     <input
                       type="tel"
                       required
-                      placeholder="e.g. +91 93120 81077"
+                      placeholder="e.g. +91 92893 28063"
                       value={formData.phone}
                       onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                     />

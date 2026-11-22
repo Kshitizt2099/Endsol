@@ -54,7 +54,10 @@ function Testimonials() {
             )}
           </h2>
           <p className="testimonials-desc-text">
-            Over 2,800+ households across Delhi , Noida, Gurgaon & Faridabad rely on eNeedSol every single day.
+            {t(
+              'Over 2,800+ households across Delhi, Noida, Gurgaon & Faridabad rely on eNeedSol every single day.',
+              'दिल्ली, नोएडा, गुरुग्राम और फरीदाबाद के 2,800+ से अधिक परिवार प्रतिदिन eNeedSol पर भरोसा करते हैं।'
+            )}
           </p>
         </div>
 
