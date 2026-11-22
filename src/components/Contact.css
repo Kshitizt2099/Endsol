@@ -286,6 +286,18 @@
   }
 }
 
+@media (max-width: 768px) {
+  .contact-main-heading {
+    font-size: 24px;
+    line-height: 1.4;
+  }
+  .hindi-contact-bracket {
+    display: block;
+    margin-top: 8px;
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 600px) {
   .form-two-fields {
     grid-template-columns: 1fr;
