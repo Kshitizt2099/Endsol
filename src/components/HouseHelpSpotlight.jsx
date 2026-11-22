@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { 
-  CheckCircle2, 
-  ShieldCheck, 
-  Star, 
-  ArrowRight, 
-  MessageSquare, 
-  Clock, 
+import {
+  CheckCircle2,
+  ShieldCheck,
+  Star,
+  ArrowRight,
+  MessageSquare,
+  Clock,
   HeartHandshake,
   Calendar,
   PhoneCall
@@ -72,7 +72,7 @@ export default function HouseHelpSpotlight() {
               घर के काम के लिए <span className="highlight-warm">विश्वसनीय और प्रशिक्षित सहायक</span>
             </h2>
             <p className="banner-lead-desc">
-              Finding reliable, verified domestic help is no longer stressful. eNeedSol provides 
+              Finding reliable, verified domestic help is no longer stressful. eNeedSol provides
               thoroughly vetted helpers with address verification, police verification, and a hassle-free replacement guarantee.
             </p>
 
@@ -134,7 +134,7 @@ export default function HouseHelpSpotlight() {
             {plans.map((plan) => {
               const active = selectedPlan === plan.id;
               return (
-                <div 
+                <div
                   key={plan.id}
                   className={`plan-card-item ${active ? 'active-plan' : ''} ${plan.recommended ? 'recommended-border' : ''}`}
                   onClick={() => setSelectedPlan(plan.id)}
@@ -145,7 +145,7 @@ export default function HouseHelpSpotlight() {
                   <h4 className="plan-name-title">{plan.name}</h4>
                   <div className="plan-price-large">{plan.price}</div>
                   <p className="plan-desc-text">{plan.desc}</p>
-                  
+
                   <div className="plan-radio-row">
                     <span className={`plan-radio-indicator ${active ? 'checked' : ''}`}>
                       {active && <span className="dot"></span>}
@@ -176,10 +176,10 @@ export default function HouseHelpSpotlight() {
                 <span>Book House Help Now</span>
                 <ArrowRight size={16} />
               </a>
-              <a 
-                href="https://wa.me/919876543210?text=Hello%20eNeedSol,%20I%20am%20looking%20for%20verified%20House%20Help%20in%20Delhi-NCR." 
-                target="_blank" 
-                rel="noreferrer" 
+              <a
+                href="https://wa.me/919312081077?text=Hello%20eNeedSol,%20I%20am%20looking%20for%20verified%20House%20Help%20in%20Delhi-NCR."
+                target="_blank"
+                rel="noreferrer"
                 className="btn-whatsapp-spotlight"
               >
                 <MessageSquare size={16} />

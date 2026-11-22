@@ -1,8 +1,8 @@
 import React from 'react';
-import { 
-  Phone, 
-  Mail, 
-  MapPin, 
+import {
+  Phone,
+  Mail,
+  MapPin,
   MessageSquare,
   ShieldCheck,
   Heart
@@ -22,21 +22,21 @@ function Footer() {
           {/* Brand Info */}
           <div className="footer-brand-col">
             <a href="#" className="footer-brand-link">
-              <img 
-                src={logoImg} 
-                alt="eNeedSol — Digital Solutions That Drive Results" 
-                className="footer-logo-img" 
+              <img
+                src={logoImg}
+                alt="eNeedSol — Digital Solutions That Drive Results"
+                className="footer-logo-img"
               />
             </a>
             <p className="footer-tagline-text">
-              Delhi-NCR's premier doorstep home, office, and business maintenance services platform. 
+              Delhi-NCR's premier doorstep home, office, and business maintenance services platform.
               Background-checked, police-verified helpers and certified technicians with 100% satisfaction guarantee.
             </p>
 
             <div className="footer-direct-contact">
               <div className="footer-contact-row">
                 <Phone size={14} color="#ff5722" />
-                <span>Helpline: +91 98765 43210</span>
+                <span>Helpline: +91 93120 81077</span>
               </div>
               <div className="footer-contact-row">
                 <Mail size={14} color="#ff5722" />
